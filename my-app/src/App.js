@@ -21,11 +21,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <CardList name='david'>
-          {
-            this.state.monster.map(monster => <h1> {monster.name}</h1>)
-          }
-        </CardList>
+        <CardList monsters={this.state.monster} />
+
+
 
       </div>
     );
